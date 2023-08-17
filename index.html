@@ -81,40 +81,46 @@
         <div class="skills-wrapper">
           <div class="first-set animate__animated animate__pulse">
             <img
-              src="photos/html-5.svg"
+              src="photos/icons8-html-5.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
             <img
-              src="assets/icons/icons8-css3.svg"
+              src="photos/icons8-css3.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
             <img
-              src="assets/icons/icons8-javascript.svg"
+              src="photos/icons8-javascript.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
+            />
+            <img
+            src ="photos/icons8-java.svg"
+            alt="java icon"
+            loading="lazy"
+            class="icon icon-card"
             />
           </div>
   
           <div class="second-set animate__animated animate__pulse">
             <img
-              src="assets/icons/icons8-bootstrap.svg"
+              src="photos/icons8-python.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
             <img
-              src="assets/icons/icons8-react-native.svg"
+              src="photos/icons8-react.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
             <img
-              src="assets/icons/icons8-git.svg"
+              src="photos/icons8-git.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
@@ -124,14 +130,82 @@
       </section>
 
     <!-- Projects section -->
-
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img 
+                src="photos/meme-bot.png"
+                alt="meme bot for discord"
+                loading="lazy"
+                class="project-pic"
+                />
+                <h3 class="project-title">Meme bot</h3>
+                <p class="project-details">
+                    A meme generator that uses the Reddit API to generate a random image from r/dankmemes and sends it in your Discord server
+                    Created with Python.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out!</a>
+            </div>
+        </div>
+      </section>
     <!-- Contact section -->
-
+      <section class="contact" id="contact">
+        <h2>Get in Touch with Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="post">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input 
+                        type="text"
+                        id="name"
+                        name="sender-name"
+                        placeholder="Enter Your Name"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email Address:</label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Enter Your Email"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea
+                        id="message"
+                        cols="60"
+                        rows="10"
+                        placeholder="Enter Your Message"
+                        name="message"
+                        class="input-field"
+                        required
+                        ></textarea>
+                    </div>
+                    <input
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
+                    />
+                </form>
+            </div>
+        </div>
+      </section>
     <!-- Social accounts - Fixed to the right -->
 
     <!-- Scroll to top -->
 
-    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+  </footer>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
